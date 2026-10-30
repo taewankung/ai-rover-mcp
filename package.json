@@ -1,0 +1,38 @@
+{
+  "name": "ai-rover-mcp",
+  "version": "1.1.0",
+  "description": "MCP server that lets an AI agent (Claude and other MCP clients) drive the AI Rover Studio robot simulator in the browser",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "ai-rover-mcp": "server.js"
+  },
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "robot",
+    "simulator",
+    "rover",
+    "arduino",
+    "esp32",
+    "claude"
+  ],
+  "homepage": "https://ai-rover-studio.pages.dev/",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ws": "^8.22.0",
+    "zod": "^4.6.7"
+  }
+}
