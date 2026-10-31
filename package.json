@@ -25,7 +25,7 @@
     "esp32",
     "claude"
   ],
-  "homepage": "https://ai-rover-studio.taewankung.workers.dev/",
+  "homepage": "https://ai-rover.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taewankung/ai-rover-mcp.git"

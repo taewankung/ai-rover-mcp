@@ -22,7 +22,7 @@ import { WebSocketServer } from 'ws';
 import { z } from 'zod';
 
 const PORT = Number(process.env.ROVER_BRIDGE_PORT) || 8765;
-const HOSTED_URL = 'https://ai-rover-studio.taewankung.workers.dev/app/';
+const HOSTED_URL = 'https://ai-rover.app/app/';
 const CALL_TIMEOUT_MS = 10_000;
 
 // ROVER_SIMULATOR_URL as a URL; a file path becomes a file:// URL (null when the file is missing).
