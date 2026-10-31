@@ -13,7 +13,7 @@
  *      ROVER_ALLOWED_ORIGINS (optional): extra comma-separated https origins the bridge accepts.
  */
 import { spawn } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
@@ -151,10 +151,12 @@ function callPage(method, params = {}, timeoutMs = CALL_TIMEOUT_MS) {
   });
 }
 
+const PKG_VERSION = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')).version;
+
 /* ---------- MCP tools ---------- */
 
 const server = new McpServer(
-  { name: 'ai-rover-studio', version: '1.0.0' },
+  { name: 'ai-rover-studio', version: PKG_VERSION },
   {
     instructions: [
       'Controls the AI Rover Studio 2D simulator running in the user\'s browser (simulation only, no real hardware).',
