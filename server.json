@@ -1,0 +1,42 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.taewankung/ai-rover-mcp",
+  "title": "AI Rover Studio",
+  "description": "Let an AI agent drive a 2D robot rover simulator in the browser: sensors, camera, wiring and code.",
+  "websiteUrl": "https://ai-rover.app/",
+  "repository": {
+    "url": "https://github.com/taewankung/ai-rover-mcp",
+    "source": "github"
+  },
+  "version": "1.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ai-rover-mcp",
+      "version": "1.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ROVER_SIMULATOR_URL",
+          "description": "Simulator page that open_simulator opens: a URL or a path to a local build. Default: https://ai-rover.app/app/?mcp=on",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "ROVER_BRIDGE_PORT",
+          "description": "Local WebSocket port the simulator page connects to. Default: 8765",
+          "isRequired": false,
+          "format": "number"
+        },
+        {
+          "name": "ROVER_ALLOWED_ORIGINS",
+          "description": "Extra comma-separated https origins the bridge accepts",
+          "isRequired": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
