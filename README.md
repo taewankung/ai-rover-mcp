@@ -1,6 +1,6 @@
 # ai-rover-mcp
 
-MCP server for [AI Rover Studio](https://ai-rover-studio.pages.dev/), a 2D robot simulator
+MCP server for [AI Rover Studio](https://ai-rover-studio.taewankung.workers.dev/), a 2D robot simulator
 that runs in the browser. It lets an AI agent (Claude Code, Claude Desktop or any MCP
 client) observe and drive the rover, change its body, run programs and read the real
 wiring for an ESP32 / Arduino Uno / Raspberry Pi. Simulation only: nothing is sent to hardware.
@@ -48,7 +48,7 @@ claude mcp add ai-rover -- node /path/to/ai-rover-mcp/server.js
 
 ## Opening the simulator yourself
 
-Open `https://ai-rover-studio.pages.dev/app/?mcp=on`. Without `?mcp=on` the hosted page does not
+Open `https://ai-rover-studio.taewankung.workers.dev/app/?mcp=on`. Without `?mcp=on` the hosted page does not
 try to reach a local MCP server; you can also press **เชื่อมต่อ MCP** on its Agent / MCP page.
 A copy opened from disk (`file://`) or from `localhost` connects on its own.
 

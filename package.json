@@ -25,7 +25,14 @@
     "esp32",
     "claude"
   ],
-  "homepage": "https://ai-rover-studio.pages.dev/",
+  "homepage": "https://ai-rover-studio.taewankung.workers.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taewankung/ai-rover-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taewankung/ai-rover-mcp/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=18"
